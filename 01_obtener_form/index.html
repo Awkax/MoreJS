@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="code.js"></script>
+</head>
+
+<body>
+	<div id="formu">
+		<h2>Formulario</h2>
+		<form>
+			<fieldset>
+				<legend>Datos básicos</legend>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" size="15" required>
+				<br><br>
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" id="apellidos" size="30" required>
+				<br><br>
+				<label for="edad">Edad:</label>
+				<input type="number" id="edad" min="18" max="65" required>
+				<br><br>
+				<label for="correo">Correo:</label>
+				<input type="email" id="correo" required>
+			</fieldset>
+
+			<fieldset>
+				<legend>Más datos</legend>
+				<label for="hobbies">Tus hobbies:</label>
+				<textarea id="hobbies" rows="2" cols="40"></textarea>
+				<br><br>
+				<label for="estudios">Tus estudios:</label>
+				<select id="estudios">
+					<option value="ninguno">Ninguno</option>
+					<option value="eso">ESO</option>
+					<option value="bach">Bachillerato</option>
+					<option value="fpb">FP básica</option>
+					<option value="fpm">FP media</option>
+					<option value="fps">FP superior</option>
+					<option value="carrera">Estudios universitarios</option>
+					<option value="mas">Estudios más avanzados</option>
+					<option value="noreg">Estudios no reglados</option>
+				</select>
+				<br><br>
+				<label for="profesion">Tus profesión:</label>
+				<select id="profesion">
+					<option value="des">Desempleado/a</option>
+					<option value="arq">Arquitecta/o</option>
+					<option value="jar">Jardinero/a</option>
+					<option value="pan">Panadera/o</option>
+					<option value="ta">Taxista</option>
+					<option value="gr">Granjera/o</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Skills</legend>
+				<label for="leng">Lenguajes de programación:</label>
+				<select id="leng">
+					<option value="nin">Ninguno</option>
+					<option value="js">JavaScript</option>
+					<option value="c">C</option>
+					<option value="j">Java</option>
+					<option value="cpp">C++</option>
+					<option value="py">Python</option>
+					<option value="php">PHP</option>
+				</select>
+				<br>
+				<p>Idiomas:</p>
+				<input type="checkbox" id="cast" value="cast">
+				<label class="a" for="cast">Castellano</label><br>
+				<input type="checkbox" id="cat" value="cat">
+				<label class="a" for="cat">Catalán</label><br>
+				<input type="checkbox" id="ing" value="ing">
+				<label class="a" for="ing">Inglés</label><br>
+				<input type="checkbox" id="ale" value="ale">
+				<label class="a" for="ale">Alemán</label><br>
+			</fieldset>
+			<input class="boton" type="reset" value="BORRAR">
+		</form>
+		<button class=boton onclick="aaa()">ENVIAR</button>
+	</div>
+	<div id="dat">
+		<h2>Tus datos</h2>
+		<div class="b" id="a">
+		</div>
+		<div class="b" id="b">
+		</div>
+		<div class="b" id="c"></div>
+		<div id="eee">
+		<p><img src="3815690.png" alt="help">Si no sabes cómo rellenar el formulario, haz click <button onclick="ayuda()">aquí</button></p>
+		</div>
+	</div>
+</body></html>

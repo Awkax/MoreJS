@@ -1,0 +1,169 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	background-image: url(clouds-gd91e119d5_1920.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h2 {
+	margin: 0 auto;
+	font-size: 2rem;
+	border-bottom: 2px solid white;
+	width: 10rem;
+	font-weight: 100;
+}
+
+/*----------------------------------------------------------------formulario-------------------------------------------------------------*/
+#formu input[type=text], input[type=email], input[type=number],
+#formu select {
+	background-color: rgba(128, 0, 255, 0);
+	border: none;
+	border-bottom: solid 1px white;
+	color: #4e0043;
+}
+#formu textarea {
+	background-color: rgba(128, 0, 255, 0);
+	border: 1px solid white;
+	color: #4e0043;
+}
+
+#formu textarea:focus {
+	outline: none;
+	appearance: none !important;
+}
+
+#formu label {
+	font-size: 1rem;
+}
+
+#formu input:focus,
+#formu select:focus {
+	outline: none;
+	border-bottom: solid 1px red;
+	appearance: none !important;
+}
+
+#formu select {
+	background: rgba(78, 10, 10, 0);
+	color: #4e0043;
+	transition: all 0.25s ease;
+}
+
+#formu fieldset {
+	margin: 4rem;
+	width: 20rem;
+	border-color: #ffffff;
+	padding: 1rem;
+}
+
+/*----------------------------https://codepen.io/majugj/pen/MomjWa--------------------------------*/
+#formu input[type=checkbox] {
+	display: none;
+	/*solo se esconde para tener un campo personalisado*/
+}
+
+#formu input[type=checkbox] + .a {
+	cursor: pointer;
+}
+
+/*esta linea significa esto + el siguiente elemento*/
+
+#formu .a:before {
+	color: #fff;
+	content: '';
+	background: transparent;
+	border: 2px solid;
+	border-radius: 25px;
+	display: inline-block;
+	height: 1.2rem;
+	width: 1.2rem;
+	margin: .3rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#formu input[type=checkbox]:checked + .a:before {
+	content: '✔';
+	font-size: .8rem;
+	font-family: 'Times New Roman';
+	color: #4e0043;
+}
+
+/*------------------------------------------------------------------*/
+#formu legend {
+	color: #4e0043;
+	font-weight: bold;
+}
+
+#formu {
+	background: rgb(255,2,79);
+background: linear-gradient(0deg, rgba(255,2,79,1) 0%, rgba(45,67,253,1) 100%);
+	color: aliceblue;
+	height: 65rem;
+	width: 30rem;
+	margin: 3rem 1rem 3rem 10%;
+	padding: 1rem;
+	float: left;
+}
+
+#formu p {
+	margin-bottom: .5rem;
+}
+.boton{
+	background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	border: 2px solid #4e0043;
+	color: #4e0043;
+	font-size: 2.5rem;
+	padding: .5rem;
+	margin: 1.6rem;
+	float: left;
+}
+.boton:hover {
+	background-color: #4e0043;
+	color: #ffffff;
+	border-color: #ffffff;
+	cursor: pointer;
+}
+.boton:active {
+	transform: scale(.9);
+}
+/*----------------------------------------------------------Tus datos--------------------------------------------------*/
+#dat {
+	background: rgb(255,2,2);
+background: linear-gradient(0deg, rgba(255,2,2,1) 0%, rgb(193, 189, 45) 100%);
+	color: aliceblue;
+	height: 43rem;
+	width: 30rem;
+	margin: 3rem 10% 3rem 1rem;
+	padding: 1rem;
+	float: left;
+}
+.b {
+	margin: 4rem;
+	width: 20rem;
+	border: 1px solid #ffffff;
+	padding: 1rem;
+	font-weight: 600;
+	color: #4e0900;
+}
+em {
+	font-style: normal;
+	font-weight: 200;
+	color: #ffffff;
+}
+#c {
+	line-height: 2rem;
+}
+#eee {
+	margin: 15rem 5rem 1rem 1rem;
+	width: 8rem;
+}
+#eee img{
+	height: 2rem;
+	width: 2rem;
+}
+#eee p{
+	margin: 0;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css" id="css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><!-- alert https://sweetalert.js.org/ -->
+	<title>Dinotienda</title>
+</head>
+
+<body>
+	<header>
+		<!--Cabecera-->
+		<div id="cabecera">
+		<div><img id="gif" src="media/dinoo.gif" alt="gifdino"></div>
+		<div id="letras">
+			<h1>DinoTienda</h1>
+			<p>Tu lugar preferido donde adquirir enormes animales de compañía!!</p>
+		</div>
+		</div>
+	</header>
+	<!--fin-cabecera-->
+	<aside>
+		<!--Aside izquierda, navegación-->
+		<nav>
+			<div id="navegacion">
+				<ul>
+					<!--menú con enlaces a nada-->
+					<li>Nosotros</li>
+					<li>Productos</li>
+					<li>Clientes</li>
+				</ul>
+				<div>
+					<img onclick="carro()" id="img-carro" src="media/carro_negro.webp" alt="carro">
+				</div>
+			</div>
+		</nav>
+	</aside>
+	<!--fin-aside-nav-->
+	<aside>
+		<!--Aside derecha, carro-->
+		<div class="carro" id="idcarro">
+			<p><strong>Productos</strong><span class="asdf" id="prod"></span></p>
+			<p><strong>Envío</strong><span class="asdf" id="envio">6€</span></p>
+			<br>
+			<p>Total sin IVA<span class="asdf" id="precio"></span></p>
+			<p><strong>TOTAL<em>(con IVA y envío incluidos)</em><span class="asdf" id="total"></span></strong></p>
+			<br>
+			<a href="index.html"><button>Vaciar carrito</button></a>
+			<a href="comprar.html"><button class="comprar">COMPRAR</button></a>
+		</div>
+	</aside>
+	<!--fin-aside-carro-->
+	<section>
+		<div class="seccion">
+			<!--section, productos-->
+			<div onclick="aviso()" id="imgaviso"><img src="media/alert.webp" alt="alerta"><p>Click aquí</p></div>
+			<div id="aviso">Porfavor, incluya sus productos por orden ascendente o descendente, gracias.</div>
+			<div id="tri">
+				<h2>Triásico</h2>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen triasico" id="notho" alt="notho"></div>
+					<img id="over" onclick="anyadir1()" onmouseup="carro()" src="media/overlay.webp" alt="img"><!-- aqui hay un id que actua como una clase, pero si lo cambio a clase no se porque no me funciona -->
+					<p id="nombre1">Nothosaurus</p><br>
+					<p><em id="numero1">5.87</em>€</p>
+					<input type="number" name="cantidad" id="cantidad1" max="10" min="1" value="1">
+					<button onclick="anyadir1()">Añadir al carrito</button>
+				</div>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen triasico" id="tawa" alt="tawa"></div>
+					<img onclick="anyadir2()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre2">Tawa</p><br>
+					<p><em id="numero2">6.45</em>€</p>
+					<input type="number" name="cantidad" id="cantidad2" max="10" min="1" value="1"><button onclick="anyadir2()">Añadir al carrito</button>
+				</div>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen triasico" id="proto" alt="proto"></div>
+					<img onclick="anyadir3()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre3">Protoavis</p><br>
+					<p><em id="numero3">2.78</em>€</p>
+					<input type="number" name="cantidad" id="cantidad3" max="10" min="1" value="1"><button onclick="anyadir3()">Añadir al carrito</button>
+				</div>
+			</div>
+			<div id="jur">
+				<h2>Jurásico</h2>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen jurasico" id="stego" alt="stego"></div>
+					<img onclick="anyadir4()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre4">Stegosaurus</p><br>
+					<p><em id="numero4">11.11</em>€</p>
+					<input type="number" name="cantidad" id="cantidad4" max="10" min="1" value="1">
+					<button onclick="anyadir4()">Añadir al carrito</button>
+				</div>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen jurasico" id="apato" alt="apato"></div>
+					<img onclick="anyadir5()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre5">Apatosaurus</p><br>
+					<p><em id="numero5">4.58</em>€</p>
+					<input type="number" name="cantidad" id="cantidad5" max="10" min="1" value="1"><button onclick="anyadir5()">Añadir al carrito</button>
+				</div>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen jurasico" id="anchi" alt="anchi"></div>
+					<img onclick="anyadir6()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre6">Anchiosaurus</p><br>
+					<p><em id="numero6">5.97</em>€</p>
+					<input type="number" name="cantidad" id="cantidad6" max="10" min="1" value="1"><button onclick="anyadir6()">Añadir al carrito</button>
+				</div>
+			</div>
+			<div id="cret">
+				<h2>Cretácico</h2>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen cretacico" id="ptero" alt="ptero"></div>
+					<img onclick="anyadir7()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre7">Pterodactyl</p><br>
+					<p><em id="numero7">4.87</em>€</p>
+					<input type="number" name="cantidad" id="cantidad7" max="10" min="1" value="1"><button onclick="anyadir7()">Añadir al carrito</button>
+				</div>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen cretacico" id="eini" alt="eini"></div>
+					<img onclick="anyadir8()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre8">Einiosaurus</p><br>
+					<p><em id="numero8">7.01</em>€</p>
+					<input type="number" name="cantidad" id="cantidad8" max="10" min="1" value="1"><button onclick="anyadir8()">Añadir al carrito</button>
+				</div>
+				<div class="caja">
+					<!--caja de producto-->
+					<div class="imagen cretacico" id="tira" alt="tira"></div>
+					<img onclick="anyadir9()" onmouseup="carro()" id="over" src="media/overlay.webp" alt="img">
+					<p id="nombre9">Tyrannosaurus</p><br>
+					<p><em id="numero9">3.99</em>€</p>
+					<input type="number" name="cantidad" id="cantidad9" max="10" min="1" value="1"><button onclick="anyadir9()">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<!--footer con botones para cambiar de estilos-->
+		<div id="estilos">
+			<p>Aquí puedes cambiar la apariencia de la página!</p>
+			<button onClick="cambiar(1)">Estilo normal</button>
+			<button onClick="cambiar(2)">Estilo blanco y negro</button>
+		</div>
+	</footer>
+</body>
+<script src="code.js"></script></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css" id="css">
+	<script src="code.js"></script>
+	<title>Dinotienda</title>
+</head>
+
+<body id="bodydos">
+	<header>
+		<!--Cabecera-->
+		<div id="cabecera">
+		<div><img id="gif" src="media/dinoo.gif" alt="gifdino"></div>
+		<div id="letras">
+			<h1>DinoTienda</h1>
+			<p>Tu lugar preferido donde adquirir enormes animales de compañía!!</p>
+		</div>
+		</div>
+	</header>
+	<!--fin-cabecera-->
+	<aside>
+		<!--Aside izquierda, navegación-->
+		<nav>
+			<div id="navegacion">
+				<ul>
+					<!--menú con enlaces a nada-->
+					<li>Nosotros</li>
+					<a href="index.html">
+						<li>Productos</li>
+					</a>
+					<li>Clientes</li>
+				</ul>
+			</div>
+		</nav>
+	</aside>
+	<!--fin-aside-nav-->
+	<section>
+	<h6>Tramitar pedido</h6>
+		<form>
+			<fieldset class="formu">
+				<legend>Introduce tus datos para tramitar el pedido</legend>
+				<label for="nombre">Nombre:</label>
+				<br>
+				<input type="text" id="nombre" size="15" required>
+				<br><br>
+				<label for="apellidos">Apellidos:</label>
+				<br>
+				<input type="text" id="apellidos" size="30" required>
+				<br><br>
+				<label for="direccion">Dirección:</label><br>
+				<input type="text" id="direccion" required>
+				<br><br>
+				<label for="correo">Correo:</label><br>
+				<input type="email" id="correo" required>
+
+			</fieldset>
+			<fieldset class="formu">
+				<legend>Método de pago</legend>
+				<label for="correo">Número tarjeta de pago:</label><br>
+				<input type="number" id="tarjeta" min="16" max="16" required>
+				<br><br>
+				<label for="correo">CVV:</label><br>
+				<input type="number" id="cvv" min="3" max="3" required><br>
+				<button onclick="pagar()" class="comprar p">PAGAR</button>
+			</fieldset>
+		</form>
+	</section>
+	<footer>
+		<!--footer con botones para cambiar de estilos-->
+		<div id="estilos">
+			<p>Aquí puedes cambiar la apariencia de la página!</p>
+		<button onClick="cambiar(1)">Estilo normal</button>
+		<button onClick="cambiar(2)">Estilo blanco y negro</button>
+		</div>
+	</footer>
+</body>
+
+</html>

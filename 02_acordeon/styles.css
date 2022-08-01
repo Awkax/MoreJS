@@ -1,0 +1,241 @@
+body {
+	text-align: center;
+	font-family: sans-serif;
+	background-image: url(media/cute-cat-cartoon-doodle-seamless-pattern-background-wallpaper-vector.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+a {
+	color: #5a2b2b;
+}
+
+/*------------header------------*/
+#logo img {
+	height: 3.5rem;
+	width: 3.5rem;
+	margin-bottom: -1rem;
+	margin-right: 1rem;
+	animation-name: swing;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+}
+
+#logo h1 {
+	background-color: #5a2b2b;
+	color: #f7a2a2;
+	padding: .3rem;
+	height: 4rem;
+	width: 30rem;
+	margin: 1rem auto;
+}
+
+@keyframes swing {
+	54% {
+		transform: rotate(0deg)
+	}
+
+	55% {
+		transform: rotate3d(0, 0, 1, 15deg);
+	}
+
+	60% {
+		transform: rotate3d(0, 0, 1, -10deg);
+	}
+
+	65% {
+		transform: rotate3d(0, 0, 1, 5deg);
+	}
+
+	70% {
+		transform: rotate3d(0, 0, 1, -5deg);
+	}
+
+	75% {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+
+	100% {
+		transform: rotate(0deg)
+	}
+}
+
+/*----------fin-header---------*/
+/*-----------section----------*/
+#cabecera {
+	background-color: #f7caca;
+	border-radius: 20px;
+	border: 2px dashed #f28080;
+	width: 55rem;
+	padding: .8rem;
+	margin: 1rem auto;
+	color: #a74a4a;
+}
+
+/*acordeon de W3*/
+.contenedor {
+	width: 40rem;
+	margin: auto;
+}
+
+.accordion {
+	background-color: #f28080;
+	color: #5a2b2b;
+	cursor: pointer;
+	padding: 18px;
+	width: 40rem;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 15px;
+	font-weight: bold;
+	transition: .2s;
+	margin: .2rem;
+}
+
+.active,
+.accordion:hover {
+	background-color: #f7a2a2;
+	animation-name: asdf;
+	animation-duration: .2s;
+}
+
+@keyframes asdf {
+	0% {
+		transform: rotate(1deg);
+	}
+	80% {
+		transform: rotate(-1deg);
+	}
+	90% {
+		transform: rotate(1deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+.accordion:after {
+	content: '\002B';
+	color: #5a2b2b;
+	font-weight: bold;
+	float: right;
+}
+
+.active:after {
+	content: "\2212";
+}
+
+.panel {
+	margin: auto;
+	width: 40rem;
+	background-color: #f7a2a2;
+	color: #5a2b2b;
+	max-height: 0;
+	text-align: center;
+	line-height: 1.5rem;
+	overflow: hidden;
+	margin-left: 3px;
+	transition: max-height 2s cubic-bezier(.93, .12, .8, 1.03);
+}
+
+.panel p {
+	margin: .5rem;
+	padding: 1rem;
+	padding-top: 0;
+}
+
+section img {
+	height: 15rem;
+	width: 20rem;
+	margin: 1rem;
+}
+
+/*----fin-section-----*/
+/*------footer-------*/
+#pie {
+	background-color: #5a2b2b;
+	padding: 1rem;
+	margin: 2rem 0 0 0;
+}
+
+#pie li {
+	list-style: none;
+	color: #f28080;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#pie li:hover {
+	color: aliceblue;
+}
+
+#pie em {
+	color: white;
+	margin: 0 .5rem;
+	font-style: normal;
+}
+
+#pie h3 {
+	color: white;
+	cursor: pointer;
+}
+
+#pie h3:hover {
+	color: #a74a4a;
+}
+
+/*-----fin-footer----*/
+/*slider de https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto/
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #a74a4a;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #5a2b2b;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
